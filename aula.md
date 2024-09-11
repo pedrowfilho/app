@@ -6,13 +6,13 @@ Maneira de dar instruções ao computador.
 
 ## Peças de uma linguagem
 
-- [x] Comentários
-- Declaração de variáveis (const, let)
-- Operadores (Atribuição, concatenação, matemáticos, lógicos)
-- Tipos de dados (string, number, boolean)
-- Estrutura de dados (functions, object, array)
-- Controle de fluxo (if/else)
-- Estrutura de repetição (for, while)
+Comentários
+Declaração de variáveis (const, let)
+Operadores (Atribuição, concatenação, matemáticos, lógicos)
+Tipos de dados (string, number, boolean)
+Estrutura de dados (functions, object, array)
+Controle de fluxo (if/else)
+Estrutura de repetição (for, while)
 
 # Fases da resolução de um problema
 
@@ -35,6 +35,7 @@ Apresentar os dados
 
 [x] Operador de atribuição de valor: =
 [x] Operador de concatenação: +
+[x] Operadores de comparação: ==, >, <, >=, <=, !=
 
 ## Estruturas de dados
 
@@ -61,6 +62,7 @@ Apresentar os dados
 # Condicionais
 
 [x] switch
+[x] if/else
 
 ## Módulos em Node.js
 
