@@ -1,40 +1,18 @@
-/*
-// hello world
-const mensagem = "Hello World";
-
-{
-    const mensagem = "Olá, Mundo!"
-    console.log(mensagem);
-}
-
-console.log(mensagem);
-*/
-
-/*
-//arrays, objetos
-let meta = {
-	value: "ler um livro por mês",
-	checked: true,
-}
-
-let metas = [
-    meta,
-    // na mão
-    {
-        value: "caminhar 20 minutos todos os dias",
-        checked: false
-    }
-]
-
-console.log(metas[1].checked);
-*/
-
 const start = () => {
-    let count = 1;
-    while(count <= 10){
-        console.log(count);
-        count++;
+  while (true) {
+    let opcao = "sair";
+    switch (opcao) {
+      case "cadastrar":
+        console.log("vamos cadastrar!");
+        break;
+      case "listar":
+        console.log("vamos listar!");
+        break;
+      case "sair":
+        console.log("tchau!");
+        return;
     }
-}
+  }
+};
 
 start();
