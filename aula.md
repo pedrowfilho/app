@@ -6,7 +6,7 @@ Maneira de dar instruções ao computador.
 
 ## Peças de uma linguagem
 
-- Comentários
+- [x] Comentários
 - Declaração de variáveis (const, let)
 - Operadores (Atribuição, concatenação, matemáticos, lógicos)
 - Tipos de dados (string, number, boolean)
@@ -19,3 +19,18 @@ Maneira de dar instruções ao computador.
 Coletar os dados
 Processar os dados (manipular, alterar, ...)
 Apresentar os dados
+
+## Escopo e variáveis
+
+Variáveis globais e locais
+Constantes
+
+## Tipos de dados
+
+- String (texto): "" '' ``
+- Number: 2, 1.4
+- Function
+
+## OPeradores
+
+Operador de atribuição de valor: =
