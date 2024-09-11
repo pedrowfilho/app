@@ -31,7 +31,7 @@ Apresentar os dados
 [x] Number: 2, 1.4
 [x] Boolean
 
-## Opradores
+## Operadores
 
 [x] Operador de atribuição de valor: =
 [x] Operador de concatenação: +
@@ -53,3 +53,7 @@ Apresentar os dados
 [x] Criar, passar argumento, ...
 [x] Executar
 [x] Arrow function / named function
+
+# Estrutura de repetição
+
+[x] while

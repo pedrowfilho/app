@@ -10,6 +10,7 @@ const mensagem = "Hello World";
 console.log(mensagem);
 */
 
+/*
 //arrays, objetos
 let meta = {
 	value: "ler um livro por mês",
@@ -26,4 +27,14 @@ let metas = [
 ]
 
 console.log(metas[1].checked);
+*/
 
+const start = () => {
+    let count = 1;
+    while(count <= 10){
+        console.log(count);
+        count++;
+    }
+}
+
+start();
