@@ -28,7 +28,7 @@ const listarMetas = async () => {
     // copia todos os elementos do array metas (spread operator)
     choices: [...metas],
     instructions: false
-  });
+  })
 
   metas.forEach((m) => {
     m.checked = false
@@ -85,6 +85,35 @@ const metasAbertas = async () => {
   })
 }
 
+const excluirMetas = async () => {
+  // map() devolve um novo array modificado
+  const metasDesmarcadas = metas.map((meta) => {
+    // desmarca todos os itens, pois é importante entender que o usuário irá marcar o que ele deseja excluir
+    return {value: meta.value, checked: false}
+  })
+
+  const itensAExcluir = await checkbox({
+    message:
+      "Selecione o item para excluir",
+    // copia todos os elementos do array metas (spread operator)
+    choices: [...metasDesmarcadas],
+    instructions: false
+  })
+
+  if(itensAExcluir.length == 0){
+    console.log("Nenhum item para excluir!")
+    return
+  }
+
+  itensAExcluir.forEach((item) => {
+    metas = metas.filter((meta) => {
+      return meta.value != item
+    })
+  })
+  
+  console.log("Meta(s) excluída(s) com sucesso!")
+}
+
 const start = async () => {
   while (true) {
     // preciso aguardar (await) o usuário selecionar algo -> promessa
@@ -108,6 +137,10 @@ const start = async () => {
           value: "abertas",
         },
         {
+          name: "Exlxuir metas",
+          value: "excluir",
+        },
+        {
           name: "Sair",
           value: "sair",
         },
@@ -127,6 +160,9 @@ const start = async () => {
         break
       case "abertas":
         await metasAbertas()
+        break
+      case "excluir":
+        await excluirMetas()
         break
       case "sair":
         console.log("### tchau! ###")
